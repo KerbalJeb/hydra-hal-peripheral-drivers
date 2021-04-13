@@ -13,7 +13,7 @@ add_library(peripheral_drivers
 
 target_include_directories(peripheral_drivers
         PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+        ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_link_libraries(peripheral_drivers PRIVATE DeviceCMSIS FreeRTOS)
+target_link_libraries(peripheral_drivers PUBLIC DeviceCMSIS FreeRTOS)
 

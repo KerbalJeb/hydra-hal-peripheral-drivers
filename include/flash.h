@@ -6,7 +6,7 @@
 /**********************************************************************
 * Includes
 **********************************************************************/
-
+#include <stdint.h>
 /**********************************************************************
 * Preprocessor Constants
 **********************************************************************/
@@ -23,6 +23,7 @@ extern "C" {
 #endif
 
 void flash_write(uintptr_t address, uint16_t value);
+uint16_t flash_read(uintptr_t address);
 void flash_erase(uintptr_t address);
 
 #ifdef __cplusplus
